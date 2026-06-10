@@ -90,6 +90,7 @@ There are no automated tests included. For manual verification:
 
 Contributions are welcome — open an issue or submit a pull request. Keep changes small and focused; add tests where appropriate and update this README when adding features.
 
+<<<<<<< HEAD
 ## Deploy to Vercel
 
 This project is ready for Vercel as a static Vite app.
@@ -101,12 +102,15 @@ This project is ready for Vercel as a static Vite app.
 	- Output Directory: `dist`
 4. Deploy. The included `vercel.json` ensures client-side routes such as `/dashboard`, `/operations`, and `/insights` resolve correctly on refresh.
 
+=======
+>>>>>>> origin/main
 ## License
 
 Add a license file (for example, MIT) if you intend to publish or share this project.
 
 ---
 
+<<<<<<< HEAD
 If you'd like, I can also:
 
 - Add code comments to `useTraceabilitySimulator.js` explaining the lifecycle
@@ -114,3 +118,5 @@ If you'd like, I can also:
 - Add a short demo GIF or screenshot and instructions to capture it
 
 File saved as README.md in the project root.
+=======
+>>>>>>> origin/main
