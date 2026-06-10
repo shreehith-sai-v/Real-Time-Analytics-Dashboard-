@@ -1,0 +1,52 @@
+export const seedShipments = [
+  {
+    id: "LOT-AX14",
+    origin: "Hyderabad Hub",
+    destination: "Chennai Cold Chain",
+    stage: "Transit",
+    complianceScore: 94,
+    temperature: 4.8,
+    latencyMinutes: 32,
+    scanCount: 18,
+    riskLevel: "Low",
+  },
+  {
+    id: "LOT-BQ27",
+    origin: "Vizag Port",
+    destination: "Bengaluru Retail Cluster",
+    stage: "Inspection",
+    complianceScore: 88,
+    temperature: 6.1,
+    latencyMinutes: 46,
+    scanCount: 12,
+    riskLevel: "Medium",
+  },
+  {
+    id: "LOT-CK52",
+    origin: "Mumbai Processing",
+    destination: "Pune Distribution",
+    stage: "Delivered",
+    complianceScore: 97,
+    temperature: 3.9,
+    latencyMinutes: 21,
+    scanCount: 24,
+    riskLevel: "Low",
+  },
+  {
+    id: "LOT-DM09",
+    origin: "Delhi Warehouse",
+    destination: "Jaipur Pharmacy Chain",
+    stage: "Transit",
+    complianceScore: 82,
+    temperature: 7.4,
+    latencyMinutes: 61,
+    scanCount: 10,
+    riskLevel: "High",
+  },
+];
+
+export const stageColors = {
+  Transit: "bg-cyan-500/20 text-cyan-800",
+  Inspection: "bg-amber-500/20 text-amber-800",
+  Delivered: "bg-emerald-500/20 text-emerald-800",
+};

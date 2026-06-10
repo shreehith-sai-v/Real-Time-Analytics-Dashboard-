@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  --app-bg:
+    radial-gradient(circle at top left, rgba(8, 145, 178, 0.22), transparent 28%),
+    radial-gradient(circle at top right, rgba(22, 163, 74, 0.18), transparent 32%),
+    linear-gradient(180deg, #020617 0%, #111827 100%);
+  --panel-bg: rgba(255, 255, 255, 0.07);
+  --panel-strong: rgba(255, 255, 255, 0.11);
+  --panel-border: rgba(255, 255, 255, 0.13);
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-soft: #94a3b8;
+  --brand: #67e8f9;
+  --brand-strong: #22d3ee;
+  --button-text: #0f172a;
+  --shadow: 0 24px 70px -36px rgba(2, 6, 23, 0.85);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --app-bg:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.19), transparent 28%),
+    radial-gradient(circle at top right, rgba(234, 88, 12, 0.14), transparent 30%),
+    linear-gradient(180deg, #f8fafc 0%, #e6f2f1 100%);
+  --panel-bg: rgba(255, 255, 255, 0.78);
+  --panel-strong: rgba(15, 23, 42, 0.05);
+  --panel-border: rgba(15, 23, 42, 0.13);
+  --text-main: #0f172a;
+  --text-muted: #334155;
+  --text-soft: #64748b;
+  --brand: #0f766e;
+  --brand-strong: #0e7490;
+  --button-text: #ffffff;
+  --shadow: 0 24px 70px -42px rgba(15, 23, 42, 0.48);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--app-bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: var(--app-bg);
+  color: var(--text-main);
+  transition: background 220ms ease, color 220ms ease;
+}
+
+.panel {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  box-shadow: var(--shadow);
+  @apply rounded-2xl backdrop-blur-md;
+}
+
+.panel-title {
+  color: var(--brand);
+  @apply text-xs font-semibold uppercase tracking-[0.22em];
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2;
+}
+
+.heading-text {
+  color: var(--text-main);
+}
+
+.muted-text {
+  color: var(--text-muted);
+}
+
+.soft-text {
+  color: var(--text-soft);
+}
+
+.soft-surface {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-strong);
+}
+
+.button-primary {
+  background: var(--brand-strong);
+  color: var(--button-text);
+  @apply rounded-xl px-4 py-3 font-semibold transition hover:brightness-110;
+}
+
+.button-secondary {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-strong);
+  color: var(--text-main);
+  @apply rounded-xl px-4 py-3 font-semibold transition hover:brightness-110;
+}
+
+.control-field {
+  border: 1px solid var(--panel-border);
+  background: var(--panel-bg);
+  color: var(--text-main);
+  @apply rounded-xl px-3 py-2 text-sm outline-none;
+}
+
+.table-head {
+  background: var(--panel-strong);
+  color: var(--text-muted);
+}
+
+.table-row {
+  border-top: 1px solid var(--panel-border);
+  color: var(--text-main);
+}
