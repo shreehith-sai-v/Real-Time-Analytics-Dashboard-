@@ -97,10 +97,3 @@ Add a license file (for example, MIT) if you intend to publish or share this pro
 
 ---
 
-If you'd like, I can also:
-
-- Add code comments to `useTraceabilitySimulator.js` explaining the lifecycle
-- Create a minimal CONTRIBUTING.md or add a sample `LICENSE`
-- Add a short demo GIF or screenshot and instructions to capture it
-
-File saved as README.md in the project root.
